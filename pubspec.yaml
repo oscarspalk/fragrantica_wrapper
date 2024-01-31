@@ -1,6 +1,6 @@
 name: fragrantica_wrapper
 description: "A package which acts as a wrapper for the Fragrantica website. Educational purposes only."
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/oscarspalk/fragrantica_wrapper
 environment:
   sdk: '>=3.2.3 <4.0.0'

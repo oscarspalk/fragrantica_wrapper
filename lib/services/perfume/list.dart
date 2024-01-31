@@ -12,7 +12,7 @@ List<PerfumeRef> extractList(BeautifulSoup bs) {
     var id = link?.getAttrValue("href")?.replaceFirst("/perfume/", "");
     var producer =
         // ignore: prefer_contains
-        id?.indexOf('/') != -1 ? id?.substring(0, id.indexOf('/')) : null;
+        id?.indexOf('/') != -1 ? id?.substring(0, id.indexOf('/', 1)) : null;
     if (producer != null && id != null && imgSrc != null && text != null) {
       refs.add(PerfumeRef(
           name: text,
